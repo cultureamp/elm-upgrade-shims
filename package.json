@@ -20,7 +20,7 @@
     "make:0.19": "yarn -s log:make-0.19 && yes | $HOME/.asdf/shims/elm make ./build/Main.elm --output=/dev/null",
     "make:check-version": "$HOME/.asdf/shims/elm --version",
     "asdf:use-elm-version": "yarn asdf:clean && asdf local elm",
-    "asdf:clean": "rm -rf .tool-versions elm-stuff",
+    "asdf:clean": "rm -rf .tool-versions",
     "log": "echo '\n🌈  elm-upgrade-shims:'",
     "log:build": "yarn -s log 'Copying unshimmed test app to `./build`...'",
     "log:make-0.18": "yarn -s log 'Building `./test` with Elm 0.18...'",
