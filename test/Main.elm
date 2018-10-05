@@ -3,6 +3,7 @@ module Main exposing (main)
 import Html exposing (div, text)
 import Shims.String
 import Shims.Html.Attributes exposing (style)
+import Shims.Tuple
 
 
 main =
@@ -12,6 +13,9 @@ main =
 
         someStringFromFloat =
             Shims.String.fromFloat 3.0
+
+        someTuple =
+            Shims.Tuple.pair "some" "value"
     in
         div
             [ style "width" "90px"
@@ -20,4 +24,5 @@ main =
             ]
             [ text someStringFromInt
             , text someStringFromFloat
+            , text (Tuple.first someTuple)
             ]
