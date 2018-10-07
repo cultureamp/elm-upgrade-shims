@@ -1,11 +1,10 @@
 {
   "version": "1.0.0",
-  "summary": "Example Elm 0.18 app, used for testing purposes!",
+  "summary": "Culture Amp's Elm 0.18-to-0.19 API shims",
   "repository": "https://github.com/cultureamp/elm-upgrade-shims.git",
   "license": "MIT",
   "source-directories": [
-      "src",
-      "test"
+      "src"
   ],
   "exposed-modules": [],
   "dependencies": {

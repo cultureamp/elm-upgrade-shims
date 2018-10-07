@@ -1,0 +1,12 @@
+{
+  "name": "@elm-upgrade-shims/elm-0.18",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "reactor": "yarn elm-reactor --port=8018",
+    "make": "yes | yarn elm-make src/Main.elm --output=/dev/null"
+  },
+  "dependencies": {
+    "elm": "^0.18"
+  }
+}

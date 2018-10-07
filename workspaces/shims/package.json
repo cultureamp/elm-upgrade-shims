@@ -1,0 +1,11 @@
+{
+  "name": "elm-upgrade-shims",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "elm": "^0.18"
+  }
+}

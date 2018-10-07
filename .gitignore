@@ -1,6 +1,5 @@
-/node_modules/
-/elm-stuff/
-/index.html
-/.tool-versions
-/yarn.lock
-/build/
+/workspaces/elm-0.19/src/
+node_modules/
+elm-stuff/
+yarn.lock
+*.log
