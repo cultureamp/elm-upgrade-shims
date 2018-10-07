@@ -6,7 +6,8 @@
     "reactor": "yarn elm-reactor --port=8018",
     "make": "yes | yarn elm-make src/Main.elm --output=/dev/null"
   },
-  "dependencies": {
-    "elm": "^0.18"
+ "dependencies": {
+    "elm": "^0.18",
+    "elm-test": "^0.18"
   }
 }
