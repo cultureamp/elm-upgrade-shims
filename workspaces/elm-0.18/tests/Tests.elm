@@ -16,6 +16,18 @@ tests =
             , test "fromFloat" <|
                 \() ->
                     Expect.equal "3.141" (Shims.String.fromFloat 3.141)
+            , test "toInt (valid)" <|
+                \() ->
+                    Expect.equal (Just 42) (Shims.String.toInt "42")
+            , test "toFloat (valid)" <|
+                \() ->
+                    Expect.equal (Just 3.141) (Shims.String.toFloat "3.141")
+            , test "toInt (invalid)" <|
+                \() ->
+                    Expect.equal Nothing (Shims.String.toInt "...")
+            , test "toFloat (invalid)" <|
+                \() ->
+                    Expect.equal Nothing (Shims.String.toInt "...")
             ]
         , describe "Tuple"
             [ test "pair" <|
