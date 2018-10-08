@@ -2,6 +2,7 @@ module Tests exposing (tests)
 
 import Expect
 import Shims.Basics
+import Shims.Regex
 import Shims.String
 import Shims.Tuple
 import Test exposing (Test, describe, test)
@@ -30,6 +31,8 @@ tests =
                 in
                 \() -> Expect.equal output (List.map (Shims.Basics.remainderBy 4) input)
             ]
+
+        --
         , describe "String"
             [ test "fromInt" <|
                 \() ->
@@ -50,9 +53,52 @@ tests =
                 \() ->
                     Expect.equal Nothing (Shims.String.toInt "...")
             ]
+
+        --
         , describe "Tuple"
             [ test "pair" <|
                 \() ->
                     Expect.equal ( 1, 2 ) (Shims.Tuple.pair 1 2)
+            ]
+
+        --
+        , describe "Regex"
+            [ describe "contains"
+                [ test "digit example" <|
+                    let
+                        digit =
+                            Maybe.withDefault Shims.Regex.never <|
+                                Shims.Regex.fromString "[0-9]"
+                    in
+                    \() -> Expect.equal (Shims.Regex.contains digit "abc123") True
+                ]
+            , describe "replace" <|
+                let
+                    userReplace userRegex replacer string =
+                        case Shims.Regex.fromString userRegex of
+                            Nothing ->
+                                string
+
+                            Just regex ->
+                                Shims.Regex.replace regex replacer string
+                in
+                [ test "devowel example" <|
+                    \() ->
+                        let
+                            devowel string =
+                                userReplace "[aeiou]" (\_ -> "") string
+                        in
+                        Expect.equal (devowel "The quick brown fox")
+                            "Th qck brwn fx"
+                , test "reverseWords example" <|
+                    \() ->
+                        let
+                            reverseWords string =
+                                userReplace "\\w+" (.match >> String.reverse) string
+                        in
+                        Expect.equal
+                            (reverseWords "deliver mined parts")
+                            "reviled denim strap"
+                ]
             ]
         ]
