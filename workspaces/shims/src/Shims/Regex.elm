@@ -14,10 +14,10 @@ fromString a =
 
 
 contains : Regex -> String -> Bool
-contains a =
-    Regex.contains a
+contains =
+    Regex.contains
 
 
 replace : Regex -> (Match -> String) -> String -> String
-replace pattern replacer string =
-    Regex.replace Regex.All pattern replacer string
+replace =
+    Regex.replace Regex.All
