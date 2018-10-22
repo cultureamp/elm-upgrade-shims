@@ -1,7 +1,9 @@
 module Tests exposing (tests)
 
 import Expect
+import Json.Decode as Decode
 import Shims.Basics
+import Shims.Browser.Events
 import Shims.Regex
 import Shims.String
 import Shims.Tuple
@@ -101,4 +103,35 @@ tests =
                             "reviled denim strap"
                 ]
             ]
+
+        --
+        , describe "Keyboard Events"
+            [ describe "onKeyPress"
+                [ test "A decoder should compile okay" <|
+                    \() ->
+                        let
+                            toKey : String -> Key
+                            toKey string =
+                                case String.uncons string of
+                                    Just ( char, "" ) ->
+                                        Character char
+
+                                    _ ->
+                                        Control string
+
+                            keyDecoder : Decode.Decoder Key
+                            keyDecoder =
+                                Decode.map toKey (Decode.field "key" Decode.string)
+
+                            elm19Sub =
+                                Shims.Browser.Events.onKeyPress keyDecoder
+                        in
+                        Expect.equal True True
+                ]
+            ]
         ]
+
+
+type Key
+    = Character Char
+    | Control String
