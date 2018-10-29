@@ -2,5 +2,4 @@
 /workspaces/elm-0.19/tests/
 node_modules/
 elm-stuff/
-yarn.lock
 *.log
