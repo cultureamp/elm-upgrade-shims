@@ -1,17 +1,27 @@
-import { readFileSync, writeFileSync } from "fs"
-import { sync as glob } from "glob"
+const { readFileSync, writeFileSync } = require("fs")
+const { sync: glob } = require("glob")
 
 const inDir = process.argv[2] || "src"
 const filePaths = glob(`${inDir}/**/*.elm`)
 
-type File = { path: string; content: string }
+/**
+ * @typedef {{ path: string, content: string }} File
+ */
 
-const toFile = (path: string): File => ({
+/**
+ * @param {string} path
+ * @returns {File}
+ */
+const toFile = path => ({
   path,
   content: readFileSync(path).toString()
 })
 
-const unshim = (file: File): File => ({
+/**
+ * @param {File} file
+ * @returns {File}
+ */
+const unshim = file => ({
   ...file,
   content: file.content
     .split("\n")
