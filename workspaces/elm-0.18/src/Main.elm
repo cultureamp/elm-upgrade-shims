@@ -1,8 +1,8 @@
 module Main exposing (main)
 
-import Elm18Compatible.AnimationFrame exposing (times)
 import Elm18Compatible.Html.Events exposing (defaultOptions, onWithOptions)
 import Elm18Compatible.Time exposing (second)
+import Elm19Compatible.Browser.Events exposing (onAnimationFrame)
 import Elm19Compatible.Html.Attributes exposing (style)
 import Elm19Compatible.String
 import Elm19Compatible.Tuple
