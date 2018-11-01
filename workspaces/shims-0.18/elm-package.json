@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "summary": "Culture Amp's Elm 0.18-to-0.19 API shims",
+    "summary": "Culture Amp's Elm 0.18-to-0.19 API shims (to be used from Elm 0.18)",
     "repository": "https://github.com/cultureamp/elm-upgrade-shims.git",
     "license": "MIT",
     "source-directories": [
