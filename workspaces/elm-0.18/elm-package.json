@@ -4,7 +4,7 @@
     "repository": "https://github.com/cultureamp/elm-upgrade-shims.git",
     "license": "MIT",
     "source-directories": [
-        "../shims/src",
+        "../shims-0.18/src",
         "tests",
         "src"
     ],

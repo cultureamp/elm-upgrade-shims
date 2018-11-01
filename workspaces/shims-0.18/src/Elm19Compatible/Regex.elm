@@ -1,4 +1,4 @@
-module Shims.Regex exposing (contains, fromString, never, replace)
+module Elm19Compatible.Regex exposing (contains, fromString, never, replace)
 
 import Regex exposing (..)
 

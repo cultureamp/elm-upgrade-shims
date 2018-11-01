@@ -25,7 +25,7 @@ const unshim = file => ({
   ...file,
   content: file.content
     .split("\n")
-    .map(line => line.split("Shims.").join(""))
+    .map(line => line.split("Elm19Compatible.").join(""))
     .join("\n")
 })
 

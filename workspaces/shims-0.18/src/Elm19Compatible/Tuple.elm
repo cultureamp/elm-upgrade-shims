@@ -1,4 +1,4 @@
-module Shims.Tuple
+module Elm19Compatible.Tuple
     exposing
         ( pair
         )
