@@ -1,4 +1,4 @@
-module Shims.String exposing
+module Elm19Compatible.String exposing
     ( fromFloat
     , fromInt
     , toFloat

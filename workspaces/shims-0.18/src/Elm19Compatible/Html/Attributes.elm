@@ -1,4 +1,4 @@
-module Shims.Html.Attributes
+module Elm19Compatible.Html.Attributes
     exposing
         ( style
         )

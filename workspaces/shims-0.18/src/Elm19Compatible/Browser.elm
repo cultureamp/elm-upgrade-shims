@@ -1,4 +1,4 @@
-module Shims.Browser exposing (element)
+module Elm19Compatible.Browser exposing (element)
 
 import Html exposing (..)
 

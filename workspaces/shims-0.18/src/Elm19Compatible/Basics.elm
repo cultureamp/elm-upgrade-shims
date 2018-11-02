@@ -1,4 +1,4 @@
-module Shims.Basics exposing (modBy, remainderBy)
+module Elm19Compatible.Basics exposing (modBy, remainderBy)
 
 import Basics
 
