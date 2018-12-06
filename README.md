@@ -9,3 +9,7 @@ This is a workspace for developing shims for dropping into an Elm 0.18 codebase 
 Happy upgrading!
 
 🌈
+
+---
+
+elm-upgrade-shims is maintained by the Front End Capability Team at Culture Amp (#team_front_end in #camp_amplify).
