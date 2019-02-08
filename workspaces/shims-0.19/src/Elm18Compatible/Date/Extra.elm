@@ -1,8 +1,8 @@
-module Elm18Compatible.Date.Extra exposing (Interval(..), toIsoString)
+module Elm18Compatible.Date.Extra exposing (Interval(..), compare, diff, floor, toFormattedString, toIsoString)
 
 import Elm18Compatible.Date
-
 import Iso8601
+
 
 type Interval
     = Year
@@ -22,11 +22,23 @@ type Interval
     | Second
     | Millisecond
 
-toIsoString : Elm18Compatible.Date -> String
-toIsoString = Iso8601.fromTime
 
-toFormattedString _ = "TODO dhotson"
+toIsoString : Elm18Compatible.Date.Date -> String
+toIsoString =
+    Iso8601.fromTime
 
-floor = Debug.todo "todo"
-diff = Debug.todo "todo"
-compare = Debug.todo "todo"
+
+toFormattedString _ =
+    "TODO dhotson"
+
+
+floor =
+    Debug.todo "todo"
+
+
+diff =
+    Debug.todo "todo"
+
+
+compare =
+    Debug.todo "todo"

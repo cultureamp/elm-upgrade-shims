@@ -1,17 +1,29 @@
-module Elm18Compatible.Date.Extra exposing (Interval(..), toIsoString)
+module Elm18Compatible.Date.Extra exposing (Interval, toIsoString)
 
 import Date as Date18
 import Date.Extra as Extra18
 
-type alias Interval = Extra18.Interval
 
-toIsoString : Elm18Compatible.Date -> String
+type alias Interval =
+    Extra18.Interval
+
+
+toIsoString : Date18.Date -> String
 toIsoString =
     Extra18.toIsoString
 
 
-toFormattedString _ = "TODO dhotson"
+toFormattedString =
+    Extra18.toFormattedString
 
-floor = Debug.crash "todo"
-diff = Debug.crash "todo"
-compare = Debug.crash "todo"
+
+floor =
+    Extra18.floor
+
+
+diff =
+    Extra18.diff
+
+
+compare =
+    Extra18.compare
