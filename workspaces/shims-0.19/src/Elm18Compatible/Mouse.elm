@@ -1,4 +1,4 @@
-module Elm18Compatible.Mouse exposing (clicks)
+module Elm18Compatible.Mouse exposing (clicks, position)
 
 import Browser.Events as Events
 import Json.Decode as Decode
