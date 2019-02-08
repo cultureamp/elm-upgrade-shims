@@ -5,6 +5,12 @@ import Elm19Compatible.Basics
 import Elm19Compatible.Regex
 import Elm19Compatible.String
 import Elm19Compatible.Tuple
+import Elm19Compatible.Browser -- import just to make sure it type checks
+import Elm19Compatible.Browser.Events -- import just to make sure it type checks
+import Elm19Compatible.Json.Decode  -- import just to make sure it type checks
+import Elm19Compatible.Json.Decode.Extra  -- import just to make sure it type checks
+import Elm19Compatible.Html.Attributes
+import Html.Attributes
 import Test exposing (Test, describe, test)
 
 
@@ -99,6 +105,13 @@ tests =
                         Expect.equal
                             (reverseWords "deliver mined parts")
                             "reviled denim strap"
+                ]
+            ]
+        , describe "Html.Attributes"
+            [ describe "style" <|
+                [ test "is equivalent" <|
+                    \() ->
+                        Expect.equal (Elm19Compatible.Html.Attributes.style "key" "value") (Html.Attributes.style [("key", "value")])
                 ]
             ]
         ]
