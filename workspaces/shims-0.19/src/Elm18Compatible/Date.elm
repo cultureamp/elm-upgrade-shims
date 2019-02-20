@@ -19,3 +19,8 @@ fromTime time =
 year : Date -> Int
 year =
     Time19.toYear Time19.utc
+
+
+toTime : Date -> Time
+toTime =
+    Time19.posixToMillis
