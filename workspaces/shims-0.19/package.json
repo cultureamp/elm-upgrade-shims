@@ -6,7 +6,6 @@
     "src"
   ],
   "dependencies": {
-    "elm": "^0.19",
-    "elm-test": "^0.19.0-rev4"
+    "elm": "^0.19"
   }
 }
