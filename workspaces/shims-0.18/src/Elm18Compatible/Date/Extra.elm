@@ -1,4 +1,4 @@
-module Elm18Compatible.Date.Extra exposing (Interval(..), toIsoString, diff, floor, compare)
+module Elm18Compatible.Date.Extra exposing (Interval(..), toIsoString, diff, floor, compare, toFormattedString)
 
 import Date as Date18
 import Date.Extra as Extra18
