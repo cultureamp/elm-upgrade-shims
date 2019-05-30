@@ -1,4 +1,4 @@
-module Elm19Compatible.Json.Decode.Extra exposing (datetime)
+module Elm19Compatible.Json.Decode.Extra exposing (datetime, fromResult)
 
 import Json.Decode.Extra as JsonDecodeExtra19
 
