@@ -1,6 +1,6 @@
 {
   "name": "elm-upgrade-shims",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Culture Amp's Elm 0.18-to-0.19 API shims",
   "repository": "https://github.com/cultureamp/elm-upgrade-shims.git",
   "author": "Louis Quinnell <louis.quinnell@cultureamp.com>",
