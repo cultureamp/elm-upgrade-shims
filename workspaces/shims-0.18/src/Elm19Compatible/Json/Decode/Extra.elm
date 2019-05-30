@@ -4,4 +4,5 @@ import Json.Decode.Extra as JsonDecodeExtra18
 
 datetime = JsonDecodeExtra18.date
 
+fromResult = JsonDecodeExtra18.fromResult
 
