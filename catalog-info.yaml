@@ -2,7 +2,6 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: elm-upgrade-shims
-
   description: >
     elm-upgrade-shims is a workspace for developing shims for dropping into an Elm 0.18 codebase to mimic the 0.19 APIs and prepare for a speedy upgrade. This project was inspired by the upgrade process being undertaken at NoRedInk, as described in this episode of Elm Town!
     yarn test copies and unshims the example Elm app from the Elm 0.18 workspace to the Elm 0.19 workspace, then makes both projects with their respective compilers.
