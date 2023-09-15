@@ -3,16 +3,18 @@ kind: Component
 metadata:
   name: elm-upgrade-shims
   description: >
-    elm-upgrade-shims is a workspace for developing shims for dropping into an Elm 0.18 codebase to mimic the 0.19 APIs and prepare for a speedy upgrade. This project was inspired by the upgrade process being undertaken at NoRedInk, as described in this episode of Elm Town!
-    yarn test copies and unshims the example Elm app from the Elm 0.18 workspace to the Elm 0.19 workspace, then makes both projects with their respective compilers.
+    elm-upgrade-shims is a workspace for developing shims for dropping into an Elm 0.18 codebase to mimic the 0.19 APIs
+    and prepare for a speedy upgrade. This project was inspired by the upgrade process being undertaken at NoRedInk, as
+    described in this episode of Elm Town! yarn test copies and unshims the example Elm app from the Elm 0.18 workspace
+    to the Elm 0.19 workspace, then makes both projects with their respective compilers.
   tags:
-    - users-na
-    - camp-foundations
+    - camp-developer-experience
     - data-none
+    - users-na
   annotations:
     github.com/project-slug: cultureamp/elm-upgrade-shims
-    github.com/team-slug: cultureamp/front-end-foundations
+    github.com/team-slug: cultureamp/delivery-engineering
 spec:
   type: library
-  owner: front-end-foundations
+  owner: delivery-engineering
   lifecycle: production
