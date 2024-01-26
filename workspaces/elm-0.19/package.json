@@ -4,10 +4,14 @@
   "private": true,
   "scripts": {
     "reactor": "yarn elm reactor --port=8019",
-    "make": "yes | yarn elm make src/Main.elm --output=/dev/null"
+    "make": "yes | yarn elm make src/Main.elm --output=/dev/null",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "elm": "^0.19",
-    "elm-test": "^0.19.0-beta9"
-  }
+    "elm-test": "^0.19.0-beta9",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
