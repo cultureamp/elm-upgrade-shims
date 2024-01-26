@@ -36,7 +36,7 @@
     "log:failure": "yarn -s log 'Build failed. ❌'"
   },
   "dependencies": {
-    "glob": "^7.1.3"
+    "glob": "^9.0.0"
   },
   "workspaces": [
     "workspaces/*"
