@@ -7,7 +7,7 @@
     "make": "yes | yarn elm-make src/Main.elm --output=/dev/null"
   },
  "dependencies": {
-    "elm": "^0.18",
-    "elm-test": "^0.18"
+    "elm": "^0.19.0",
+    "elm-test": "^0.19.1"
   }
 }
